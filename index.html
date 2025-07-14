@@ -12,6 +12,7 @@
         <title>Fleeb Palace: HOT</title>
     </head>
     <body>
+        <script src="index.js"></script>
         <header></header>
 
         <div class="bodycontainer">
@@ -22,8 +23,12 @@
                 </div>
                 <div class="searchbar">
                     <input type="text" value="Enter your location here." >
-                    <button class="searchbutton"><i id="glass" class="fa-solid fa-magnifying-glass"></i></button>
-                    
+                    <button class="searchbutton" onclick="fetchData()"><i id="glass" class="fa-solid fa-magnifying-glass"></i></button>   
+                </div>
+                <div class="weathercontainer">
+                    <h3>Location:</h3><p id="location">placeholder</p>
+                    <h3>Temperature:</h3><p id="temperature">placeholder</p>
+                    <h3>Feels Like:</h3><p id="feels-like">placeholder</p>
                 </div>
             </div>
         </div>
