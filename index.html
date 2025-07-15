@@ -19,17 +19,29 @@
                 <div class="text">
                     <h2>Welcome</h2>
                     <h3>Please enter a town or city and click search to begin.</h3>
+                    <h4>(Only within the UK please!)</h4>
                 </div>
                 <div class="searchbar">
                     <input type="text" id="userinput" value="Enter your location here." >
                     <button id="searchbutton"><i id="glass" class="fa-solid fa-magnifying-glass"></i></button>   
                 </div>
-                <div id="weathercontainer">
-                    <h3>Location:</h3><p id="location">Sydney</p>
-                    <h3>Temperature:</h3><p id="temperature">30°C</p>
-                    <h3>Feels Like:</h3><p id="feels-like">30°C</p>
-                </div>
             </div>
+            <div id="weathercontainer" class="hidden">
+                    <div id="locationbox" class="weatherboxes">
+                        <h2 id="location">Sydney</h3>
+                    </div>
+                    <div id="temperaturebox" class="weatherboxes">
+                        <h3 id="temp_max">30°C</h3>
+                        <h3 id="temp_min">10°C</h3>
+                    </div>
+                    <div id="iconbox" class="weatherboxes">
+                        <img src='https://openweathermap.org/img/wn/04d@2x.png' id="weathericon"></img>
+                    </div>
+                    <div id="current_tempbox" class="weatherboxes">
+                        <h3 id="title">Currently</h3>
+                        <h3 id="temp_current">30°C</h3>
+                    </div>
+                </div>
         </div>
         <script src="index.js"></script>
     </body>
