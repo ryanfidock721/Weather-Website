@@ -95,9 +95,13 @@ h2 {
     color: #e2742b;
 }
 
-.weathercontainer {
+#weathercontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#weathercontainer.hidden {
+    display: none;
 }
