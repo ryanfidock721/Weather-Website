@@ -4,7 +4,7 @@ async function fetchData() {
 
     try{
         let userinput = document.getElementById('userinput').value;
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userinput},uk&units=metric&APPID=837fdf4a1058954e0a74705a4cedd8a1`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userinput},uk&units=metric&APPID=---API KEY HERE---`);
 
         if(!response.ok){
             throw new Error('Could not fetch resource');
